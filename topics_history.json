@@ -20,6 +20,27 @@
         "notebooklm-update"
       ],
       "title": "NotebookLM update"
+    },
+    {
+      "date": "2026-03-25",
+      "tags": [
+        "claude-computer-use"
+      ],
+      "title": "Claude Computer Use launches on macOS"
+    },
+    {
+      "date": "2026-03-25",
+      "tags": [
+        "claude-code-dream-memory"
+      ],
+      "title": "Claude Code gets /dream and Memory 2.0"
+    },
+    {
+      "date": "2026-03-25",
+      "tags": [
+        "notebooklm-update"
+      ],
+      "title": "NotebookLM update"
     }
   ]
 }
