@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI News Briefing — 25 March 2026</title>
+<title>AI News Briefing Archive</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -13,110 +13,35 @@
     padding: 40px 20px;
     min-height: 100vh;
   }
-  .container { max-width: 720px; margin: 0 auto; }
+  .container { max-width: 480px; margin: 0 auto; }
   header { margin-bottom: 40px; border-bottom: 1px solid #222; padding-bottom: 24px; }
-  header h1 { font-size: 22px; font-weight: 600; color: #fff; letter-spacing: -0.3px; }
-  header p { font-size: 13px; color: #666; margin-top: 6px; }
-
-  .story { margin-bottom: 32px; background: #161616; border: 1px solid #222; border-radius: 10px; padding: 24px; }
-  .story-number { font-size: 11px; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
-  .story h2 { font-size: 17px; font-weight: 600; color: #fff; margin-bottom: 12px; line-height: 1.4; }
-  .story p { font-size: 14px; color: #aaa; line-height: 1.7; margin-bottom: 16px; }
-
-  .meta { display: flex; flex-wrap: wrap; gap: 16px; font-size: 12px; color: #555; }
-  .meta-item { display: flex; align-items: baseline; gap: 6px; }
-  .meta-label { text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; color: #444; }
-  .channels { color: #888; }
-  .sources a {
-    color: #4a9eff;
+  header h1 { font-size: 22px; font-weight: 600; color: #fff; }
+  header p { font-size: 13px; color: #555; margin-top: 6px; }
+  .entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: #161616;
+    border: 1px solid #222;
+    border-radius: 8px;
+    margin-bottom: 10px;
     text-decoration: none;
-    margin-right: 10px;
+    color: #e8e8e8;
+    transition: border-color 0.15s;
   }
-  .sources a:hover { text-decoration: underline; }
-
-  .signal-bar {
-    display: inline-block;
-    background: #1a1a1a;
-    border: 1px solid #2a2a2a;
-    border-radius: 4px;
-    padding: 2px 8px;
-    font-size: 11px;
-    color: #666;
-    margin-bottom: 12px;
-  }
-  .signal-high { border-color: #1d4a1d; color: #4caf50; background: #0d1f0d; }
-  .signal-med  { border-color: #3a2d0a; color: #f0a500; background: #1a1400; }
-  .signal-low  { border-color: #2a1a1a; color: #888; background: #1a1010; }
-
-  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #1a1a1a; font-size: 12px; color: #444; line-height: 1.8; }
+  .entry:hover { border-color: #444; }
+  .date { font-size: 15px; font-weight: 500; }
+  .arrow { color: #444; font-size: 18px; }
 </style>
 </head>
 <body>
 <div class="container">
-
   <header>
     <h1>AI News Briefing</h1>
-    <p>Wednesday, 25 March 2026 &nbsp;·&nbsp; 14 channels scanned via YouTube RSS</p>
+    <p>Daily AI signal from 14 YouTube channels</p>
   </header>
-
-  <div class="story">
-    <div class="story-number">Story 1</div>
-    <div class="signal-bar signal-high">▲ Strong signal — 7 channels</div>
-    <h2>Claude Computer Use launches on macOS</h2>
-    <p>Anthropic released Computer Use for Claude Pro and Max subscribers on macOS, letting Claude directly control your computer — opening apps, clicking, filling forms, and completing multi-step tasks autonomously. It uses a permission-first model where Claude requests access before touching each new app and can be stopped at any time. Windows is not yet supported; Anthropic calls it early-stage and more error-prone than Claude's text or coding abilities.</p>
-    <div class="meta">
-      <div class="meta-item">
-        <span class="meta-label">Channels</span>
-        <span class="channels">Nick Saraev · Brock Mesarich · Julian Goldie SEO · ICOR with Tom · Bijan Bowen · Universe of AI · Samuel Gregory</span>
-      </div>
-      <div class="meta-item sources">
-        <span class="meta-label">Sources</span>
-        <a href="https://www.cnbc.com/2026/03/24/anthropic-claude-ai-agent-use-computer-finish-tasks.html" target="_blank">CNBC</a>
-        <a href="https://venturebeat.com/ai/anthropic-adds-memory-to-claude-team-and-enterprise-incognito-for-all" target="_blank">VentureBeat</a>
-        <a href="https://www.anthropic.com/news" target="_blank">Anthropic</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="story">
-    <div class="story-number">Story 2</div>
-    <div class="signal-bar signal-med">◆ Medium signal — 2 channels, 4 videos</div>
-    <h2>Claude Code gets /dream and Memory 2.0</h2>
-    <p>Anthropic shipped a memory overhaul for Claude Code, including a <code style="background:#222;padding:1px 5px;border-radius:3px;font-size:13px;">/dream</code> command that consolidates Claude's memory mid-session, reducing context drift on long coding tasks. A new auto-memory directory with timestamped files lets Claude accumulate project knowledge across sessions without manual input. Multiple creators covered it in quick succession, suggesting it solves a well-known pain point for daily Claude Code users.</p>
-    <div class="meta">
-      <div class="meta-item">
-        <span class="meta-label">Channels</span>
-        <span class="channels">Nate Herk · Chase AI</span>
-      </div>
-      <div class="meta-item sources">
-        <span class="meta-label">Sources</span>
-        <a href="https://venturebeat.com/orchestration/claude-code-just-got-updated-with-one-of-the-most-requested-user-features" target="_blank">VentureBeat</a>
-        <a href="https://docs.anthropic.com/en/docs/claude-code/memory" target="_blank">Anthropic Docs</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="story">
-    <div class="story-number">Story 3</div>
-    <div class="signal-bar signal-low">○ Weak signal — 2 channels, no source found</div>
-    <h2>NotebookLM update</h2>
-    <p>Two creators covered a NotebookLM update on the same day — one focused on building interactive websites, another on using it to construct Claude AI agents. No matching announcement was found in curated news sources, suggesting this is either a minor quality-of-life update or practitioner-level news that hasn't hit mainstream tech press yet.</p>
-    <div class="meta">
-      <div class="meta-item">
-        <span class="meta-label">Channels</span>
-        <span class="channels">Paul J Lipsky · Julian Goldie SEO</span>
-      </div>
-      <div class="meta-item sources">
-        <span class="meta-label">Sources</span>
-        <span style="color:#555">None found in curated sources</span>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    Sources checked: techcrunch.com · cnbc.com · venturebeat.com · anthropic.com · openai.com<br>
-    Excluded (block Anthropic crawler): theverge.com · wired.com · arstechnica.com
-  </footer>
+  <a class="entry" href="26.03.25.html"><span class="date">2025-03-26</span><span class="arrow">→</span></a>
 
 </div>
 </body>
